@@ -4,7 +4,6 @@ syntax on	"enable syntax highlighting
 set number	"show line numbers
 set mouse=a	"enable mouse
 set tabstop=4	"tabs show as 4 spaces
-set cursorline	"show line under cursor
 set showmatch	"highlight matching []{}()
 set hlsearch	"highlight search matches
 "binds nohlsearch (removes search highlights) to backspace

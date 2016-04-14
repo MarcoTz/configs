@@ -3,4 +3,4 @@ then
 	echo "Lists all scripts in this directory(bash scripts folder)"
 	exit
 fi
-ls $(dirname "$0") | sed 's/<TAB>/ /'
+find $(dirname "$0") -name "*.sh" | sed 's_.*/__'
