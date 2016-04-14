@@ -15,3 +15,6 @@ nnoremap <space> za
 set foldmethod=indent "folds based on indents
 set autoindent "automatically indents
 set hidden "allows having multiple open files
+set smartcase "smart case in searches
+set ruler "show cursor position
+set cmdheight=2 "commands have two lines
