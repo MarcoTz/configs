@@ -2,7 +2,6 @@ filetype plugin on	"enable filtype specific highlighting
 filetype indent plugin on "enable filetype specific indenting
 syntax on	"enable syntax highlighting
 set number	"show line numbers
-set mouse=a	"enable mouse
 set tabstop=4	"tabs show as 4 spaces
 set showmatch	"highlight matching []{}()
 set hlsearch	"highlight search matches
