@@ -1,12 +1,13 @@
-USAGE="Usage: renamePattern.sh [OPTIONS] SEARCHSTR REPLACESTR"
+USAGE="Usage: renamePattern.sh SEARCHSTR REPLACESTR"
 MOREINFO="try 'renamePattern.sh -h' for more information"
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]
 then
 	echo $USAGE
 	echo "Search for occurences of SEARCHSTR in filenames in current folder and subfolders and replace it with REPLACESTR"
-	echo "Example: renamePattern.sh ' ' '_'"
+	echo "Example: renamePattern.sh 'a' 'b'"
 	echo ""
+	echo "doesn't work if files have spaces"
 	echo "Options:"
 	echo "-h, --help	Print this help and exit"
 	exit
@@ -21,4 +22,8 @@ SEARCHSTR=$1
 shift
 REPLACESTR=$1
 shift
-find . -depth $SEARCHDEPTH -name "*$SEARCHSTR*" | while IFS= read -r f ; do mv -i "$f" "$(dirname "$f")/$(basename "$f"|tr "$SEARCHSTR" "$REPLACESTR")" ; done
+for file in $(find . -regextype sed -regex ".*as.*");
+do
+mv $file $(echo $file | sed 's/as/jk/'); 
+done
+
