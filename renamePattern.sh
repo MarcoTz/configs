@@ -22,8 +22,8 @@ SEARCHSTR=$1
 shift
 REPLACESTR=$1
 shift
-for file in $(find . -regextype sed -regex ".*as.*");
+for file in $(find . -regextype sed -regex ".*$SEARCHSTR.*");
 do
-mv $file $(echo $file | sed 's/as/jk/'); 
+mv $file $(echo $file | sed "s/$SEARCHSTR/$REPLACESTR/"); 
 done
 
