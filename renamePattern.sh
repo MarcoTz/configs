@@ -22,7 +22,7 @@ SEARCHSTR=$1
 shift
 REPLACESTR=$1
 shift
-for file in $(find . -regextype sed -regex ".*$SEARCHSTR.*");
+for file in $(find . -type f);
 do
 mv $file $(echo $file | sed "s/$SEARCHSTR/$REPLACESTR/"); 
 done
