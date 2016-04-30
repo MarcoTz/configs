@@ -10,6 +10,6 @@ nnoremap <space> za
 set hidden "allows having multiple open files
 set smartcase "smart case in searches
 set ruler "show cursor position
-set cmdheight=2 "commands have two lines
 set wildmenu
 set wildmode=longest,list "turns on tab autocompletion for file names
+set mouse=a "enable mouse
