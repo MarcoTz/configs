@@ -1,3 +1,3 @@
-# bash_scripts
+# bashScripts
 
 Some random bash scripts I made for various things
