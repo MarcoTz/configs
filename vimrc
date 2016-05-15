@@ -13,4 +13,4 @@ set ruler "show cursor position
 set wildmenu
 set wildmode=longest,list "turns on tab autocompletion for file names
 set mouse=a "enable mouse
-set smartindent
+set autoindent
