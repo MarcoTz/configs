@@ -4,3 +4,4 @@ URxvt.background: #000000
 URxvt.foreground: #ffffff
 URxvt.font: xft:Oxygen Mono:size=18
 URxvt.cursorBlink: 1
+URxvt.perl-ext-common: tabbed

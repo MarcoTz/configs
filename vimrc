@@ -10,7 +10,6 @@ nnoremap <space> za
 set hidden "allows having multiple open files
 set smartcase "smart case in searches
 set ruler "show cursor position
-set wildmenu
-set wildmode=longest,list "turns on tab autocompletion for file names
 set mouse=a "enable mouse
-set autoindent
+set autoindent "automatically keep indents
+set incsearch "hightlight while searching
