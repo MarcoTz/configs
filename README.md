@@ -2,7 +2,7 @@
 
 Some random bash scripts I made for various things
 
-##directories:
+##Directories:
 
 * configs: files i use to save my settings like bashrc and vimrc
 	(used with symlinks)
@@ -10,6 +10,7 @@ Some random bash scripts I made for various things
 	(folder in PATH)
 * setupscripts: scripts that install various things
 	(including a script that makes the links for my config files)
+* alarm: an alarm script
 
 ##The Scripts:
 
@@ -43,6 +44,9 @@ those are: base16, syntastic, nerdtree and pathogen
 
 * installPacaur.sh installs pacaur
 * importantstuff.sh installs the most important packages(and some not so important ones), not complete
+
+###alarm
+* alarm.sh an alarm script
 
 ##other repos I used:
 
