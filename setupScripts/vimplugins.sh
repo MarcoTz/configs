@@ -18,10 +18,8 @@ git clone https://github.com/scrooloose/syntastic.git
 cd ../
 
 #install base16 colorscheme
-mkdir colors
-cd colors
 git clone git://github.com/chriskempson/base16-vim.git
-cp "base16-vim/colors/*" ./
+mv "base16-vim/colors/" ./
 rm -rf base16-vim
 cd ../
 

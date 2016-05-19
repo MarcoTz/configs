@@ -1,7 +1,7 @@
 pacman -S --needed base-devel
-curl aur.archlinux.org/cgit/snapshot/pacaur.tar.gz
+curl https://aur.archlinux.org/cgit/aur.git/snapshot/pacaur.tar.gz > pacaur.tar.gz
 tar -xvf pacaur.tar.gz
 cd pacaur/
-makepgk -sri
+makepkg -sri
 cd ../
 rm -rf pacaur/
