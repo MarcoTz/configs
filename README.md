@@ -11,7 +11,7 @@ Some random bash scripts I made for various things
 * setupscripts: scripts that install various things
 	(including a script that makes the links for my config files)
 
-##the scripts:
+##The Scripts:
 
 ###utils:
 
@@ -22,6 +22,27 @@ Some random bash scripts I made for various things
 * nodepend.sh lists all the installed packages that nothing depends on or removes orphans
 * removeSpaces.sh removes all spaces in files in folder and subfolders, replacing them with _
 * restartFRITZwifi.sh restarts my home wifi, because my router is broken
+
+###configs:
+
+* bashrc
+* vimrc
+* Xresources
+* flake8 config for flake8
+
+all of those are linked to the right places with installConfs.sh
+
+###setupScripts
+
+* installConfs.sh links the configs above in the right directories
+* vimplugins.sh installs all the vimplugins i use
+
+those are: base16, syntastic, nerdtree and pathogen
+
+####arch
+
+* installPacaur.sh installs pacaur
+* importantstuff.sh installs the most important packages(and some not so important ones), not complete
 
 ##other repos I used:
 
