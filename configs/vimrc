@@ -2,8 +2,6 @@ syntax on	"enable syntax highlighting
 set number	"show line numbers
 set tabstop=4	"tabs show as 4 spaces
 set showmatch	"highlight matching []{}()
-filetype plugin on
-filetype indent off
 set hlsearch	"highlight search matches
 "binds nohlsearch (removes search highlights) to backspace
 nnoremap <backspace> :nohlsearch<CR>
