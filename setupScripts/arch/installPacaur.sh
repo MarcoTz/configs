@@ -5,3 +5,4 @@ cd pacaur/
 makepkg -sri
 cd ../
 rm -rf pacaur/
+rm pacaur.tar.gz
