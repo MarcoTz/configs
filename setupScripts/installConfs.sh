@@ -1,6 +1,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"/../
 cd $DIR
 
+#removes old config files if -f or --force is present
 if [ "$1" == "-f" ] || [ "$1" == "--force" ]
 then 
 	rm ~/.bashrc
@@ -23,6 +24,5 @@ ln -s $DIR/configs/Xresources ~/.Xresources
 xrdb ~/.Xresources
 ln -s $DIR/configs/flake8 ~/.config/flake8
 
-#install cron jobs 
-#requires root/sudo
-sudo ln -s $DIR/cron/rsync-backup.sh
+#install crontab
+fcrontab $DIR/cron/crontab.cron 

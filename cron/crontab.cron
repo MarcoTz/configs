@@ -1,0 +1,2 @@
+#rsync-backup daily, cron scripts need to be in path
+00	20	*	*	*	rsync-backup.sh

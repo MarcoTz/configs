@@ -2,4 +2,4 @@ alias mess="/home/rooxo/Games/mame/mess64"
 alias reloadXresources="xrdb ~/.Xresources"
 alias update='pacaur -Syu'
 alias ls='ls --color'
-PATH=~/Apps/bash/utils:$PATH
+PATH=~/Apps/bash/utils:~/Apps/bash/cron:$PATH
