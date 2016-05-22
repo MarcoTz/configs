@@ -23,5 +23,6 @@ ln -s $DIR/configs/Xresources ~/.Xresources
 xrdb ~/.Xresources
 ln -s $DIR/configs/flake8 ~/.config/flake8
 
-#install cron jobs
+#install cron jobs 
+#requires root/sudo
 sudo ln -s $DIR/cron/rsync-backup.sh

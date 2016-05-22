@@ -1,9 +1,10 @@
+#installs important packages, requires root
 pacman -S vim git chromium wine base-devel jdk8-openjdk mariadb rfkill vlc python-pip frcon
 
-sudo systemctl start fcron.service
-sudo systemctl enable fcron.service
-sudo systemctl start mysql.service
-sudo systemctl enable mysql.service
+systemctl start fcron.service
+systemctl enable fcron.service
+systemctl start mysql.service
+systemctl enable mysql.service
 
 #other stuff
 pacaur -S nodejs-jshint
