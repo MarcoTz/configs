@@ -11,6 +11,7 @@ Some random bash scripts I made for various things
 * setupscripts: scripts that install various things
 	(including a script that makes the links for my config files)
 * alarm: an alarm script
+* cron: cron jobs
 
 ##The Scripts:
 
@@ -32,6 +33,12 @@ Some random bash scripts I made for various things
 * flake8 config for flake8
 
 all of those are linked to the right places with installConfs.sh
+
+###cron 
+
+* rsync-backup.sh daily backup of my home folders
+
+also installed with installConfs.sh
 
 ###setupScripts
 

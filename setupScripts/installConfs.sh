@@ -1,4 +1,4 @@
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"/../configs
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"/../
 cd $DIR
 
 if [ "$1" == "-f" ] || [ "$1" == "--force" ]
@@ -17,9 +17,11 @@ then
 	echo "-f, --force remove the configs first if they exist"
 fi
 
-ln -s $DIR/bashrc ~/.bashrc
-ln -s $DIR/vimrc ~/.vimrc
-ln -s $DIR/Xresources ~/.Xresources
+ln -s $DIR/configs/bashrc ~/.bashrc
+ln -s $DIR/configs/vimrc ~/.vimrc
+ln -s $DIR/configs/Xresources ~/.Xresources
 xrdb ~/.Xresources
-ln -s $DIR/flake8 ~/.config/flake8
+ln -s $DIR/configs/flake8 ~/.config/flake8
 
+#install cron jobs
+sudo ln -s $DIR/cron/rsync-backup.sh
