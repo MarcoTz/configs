@@ -3,3 +3,5 @@ alias reloadXresources="xrdb ~/.Xresources"
 alias update='pacaur -Syu'
 alias ls='ls --color'
 PATH=~/Apps/bash/utils:~/Apps/bash/cron:$PATH
+EDITOR=vim
+export EDITOR
