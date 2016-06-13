@@ -37,6 +37,7 @@ all of those are linked to the right places with installConfs.sh
 ###cron 
 
 * rsync-backup.sh daily backup of my home folders
+* crontab.cron the crontab, current crontab always gets saved here
 
 also installed with installConfs.sh
 
