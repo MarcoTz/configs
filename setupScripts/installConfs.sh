@@ -22,6 +22,7 @@ ln -s $DIR/configs/bashrc ~/.bashrc
 ln -s $DIR/configs/vimrc ~/.vimrc
 ln -s $DIR/configs/Xresources ~/.Xresources
 xrdb ~/.Xresources
+mkdir ~/.config
 ln -s $DIR/configs/flake8 ~/.config/flake8
 
 #install crontab
