@@ -45,5 +45,3 @@ URxvt.perl-ext-common: tabbed
 *.color13:      base06
 *.color14:      base0F
 *.color15:      base07
-
-URxvt.background:	#000000
