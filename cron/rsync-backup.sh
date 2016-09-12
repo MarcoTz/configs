@@ -6,3 +6,4 @@ rsync -a --delete ~/Apps $BACKUPDIR
 rsync -a --delete ~/Games $BACKUPDIR
 rsync -a --delete ~/Pictures $BACKUPDIR
 rsync -a --delete ~/Videos $BACKUPDIR
+rsync -a --delete ~/Desktop $BACKUPDIR

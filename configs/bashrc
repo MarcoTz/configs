@@ -1,7 +1,9 @@
 alias mess="/home/rooxo/Games/mame/mess64"
 alias reloadXresources="xrdb ~/.Xresources"
+alias init="reloadXresources && restartFRITZwifi.sh && exit"
 alias update='pacaur -Syu'
 PATH=~/Apps/bash/utils:~/Apps/bash/cron:$PATH
-TERM=rxvt
+#TERM=rxvt
+#export TERM
 EDITOR=vim
 export EDITOR

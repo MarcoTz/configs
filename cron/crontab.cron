@@ -1,5 +1,5 @@
 #Mins Hours Days Months Day of the week
 #cron scripts need to be in path
 00	20	*	*	*	rsync-backup.sh
-00	15	*	*	*	yes | pacaur -Syu > ~/pacaur.log
+00	15	*	*	*	yes | sudo pacman -Syu > ~/pacman.log
 *	*	*	*	*	fcrontab -l > ~/Apps/bash/cron/crontab.cron
