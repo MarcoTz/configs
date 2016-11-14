@@ -1,6 +1,6 @@
-# bashScripts
+#some Code 
 
-Some random bash scripts I made for various things
+Some random stuff I made for various things
 
 ##Directories:
 
@@ -10,10 +10,12 @@ Some random bash scripts I made for various things
 	(folder in PATH)
 * setupscripts: scripts that install various things
 	(including a script that makes the links for my config files)
-* alarm: an alarm script
 * cron: cron jobs
+* stuff: some random code, not neccessarily useful
 
 ##The Scripts:
+
+* crontab.cron my crontab
 
 ###utils:
 
@@ -24,37 +26,30 @@ Some random bash scripts I made for various things
 * nodepend.sh lists all the installed packages that nothing depends on or removes orphans
 * removeSpaces.sh removes all spaces in files in folder and subfolders, replacing them with _
 * restartFRITZwifi.sh restarts my home wifi, because my router is broken
+* rsync-backup.sh backups home folder to external hard drive(mount point specified in file)
 
 ###configs:
 
 * bashrc
 * vimrc
 * Xresources
-* flake8 config for flake8
 
 all of those are linked to the right places with installConfs.sh
-
-###cron 
-
-* rsync-backup.sh daily backup of my home folders
-* crontab.cron the crontab, current crontab always gets saved here
 
 also installed with installConfs.sh
 
 ###setupScripts
 
 * installConfs.sh links the configs above in the right directories
-* vimplugins.sh installs all the vimplugins i use
+* vimplugins.sh installs all the vimplugins I use
 
-those are: base16, syntastic, nerdtree and pathogen
+which are: base16 ,nerdtree and pathogen
 
-####arch
-
-* installPacaur.sh installs pacaur
-* importantstuff.sh installs the most important packages(and some not so important ones), not complete
-
-###alarm
-* alarm.sh an alarm script
+###stuff 
+* alarm.sh an alarm script, needs alarm.mp3 in the same folder
+* brainfuck.c a brainfuck interpreter in C
+* caesar.h encodes or decodes text in ceasar cipher
+* snek.cpp snake in the terminal in c++
 
 ##other repos I used:
 

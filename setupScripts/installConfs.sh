@@ -7,7 +7,6 @@ then
 	rm ~/.bashrc
 	rm ~/.vimrc
 	rm ~/.Xresources
-	rm ~/.config/flake8
 fi
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]
@@ -23,7 +22,6 @@ ln -s $DIR/configs/vimrc ~/.vimrc
 ln -s $DIR/configs/Xresources ~/.Xresources
 xrdb ~/.Xresources
 mkdir ~/.config
-ln -s $DIR/configs/flake8 ~/.config/flake8
 
 #install crontab
-fcrontab $DIR/cron/crontab.cron 
+fcrontab $DIR/crontab.cron 

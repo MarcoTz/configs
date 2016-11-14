@@ -13,11 +13,6 @@ rm "vim-pathogen" -rf
 cd bundle
 git clone https://github.com/scrooloose/nerdtree.git
 
-#install syntastic
-#needs syntax checkers to work
-git clone https://github.com/scrooloose/syntastic.git
-cd ../
-
 #install base16 colorscheme
 git clone git://github.com/chriskempson/base16-vim.git
 mv "base16-vim/colors/" ./
