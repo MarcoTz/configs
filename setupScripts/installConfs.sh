@@ -21,7 +21,6 @@ ln -s $DIR/configs/bashrc ~/.bashrc
 ln -s $DIR/configs/vimrc ~/.vimrc
 ln -s $DIR/configs/Xresources ~/.Xresources
 xrdb ~/.Xresources
-mkdir ~/.config
 
 #install crontab
 fcrontab $DIR/crontab.cron 
