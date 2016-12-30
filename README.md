@@ -10,7 +10,6 @@ Some random stuff I made for various things
 	(folder in PATH)
 * setupscripts: scripts that install various things
 	(including a script that makes the links for my config files)
-* cron: cron jobs
 * stuff: some random code, not neccessarily useful
 
 ##The Scripts:
