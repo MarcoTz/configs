@@ -7,7 +7,6 @@ set hlsearch	"highlight search matches
 nnoremap <backspace> :nohlsearch<CR>
 
 nnoremap <RIGHT> :tabNext<CR>
-nnoremap <LEFT> :tabrewind<CR>
 set smartcase "smart case in searches
 set mouse=a "enable mouse
 set autoindent "automatically keep indents
@@ -68,13 +67,3 @@ execute pathogen#infect()
 call pathogen#helptags()
 
 colorscheme base16-default "use base16 color scheme
-
-"settings for syntactic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
