@@ -4,7 +4,7 @@ then
 	exit
 fi
 
-for file in $(find . -maxdepth 1 -name "*.aux" -o -name "*.log");
+for file in $(find . -maxdepth 1 -name "*.aux" -o -name "*.log" -o -name "*.out");
 do
 	rm $file
 done
