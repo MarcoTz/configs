@@ -5,4 +5,4 @@ alias update='pacaur -Syu'
 PATH=~/Apps/config/utils:~/Apps/stuff:$PATH
 export TERM=rxvt
 export EDITOR=vim
-export GOPATH=~/Apps/gowrk
+PS1='[\u@\h] \w$ '
