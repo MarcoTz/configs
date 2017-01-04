@@ -1,3 +1,5 @@
+import json
+
 #returns the highest number you can make by arranging the four given digits
 def dig_minmax(i, highest=True):
     ls = nr_to_list(i)
@@ -70,9 +72,14 @@ def mult4(i):
     return i
 
 
-for i in range(0,9999):
+f = open('data','w')
+
+for i in range(0,10000):
     ls = kap(i)
     if ls is False:
         print(str(i)+" does not converge")
     else:
         print(str(i)+" converges in "+str(len(ls))+" steps, going through "+str(ls))
+
+    f.write(json.dumps((i,ls))+"\n")
+
