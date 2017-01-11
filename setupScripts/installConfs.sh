@@ -6,7 +6,6 @@ if [ "$1" == "-f" ] || [ "$1" == "--force" ]
 then 
 	rm ~/.bashrc
 	rm ~/.vimrc
-	rm ~/.Xresources
 fi
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]
@@ -19,6 +18,4 @@ fi
 
 ln -s $DIR/configs/bashrc ~/.bashrc
 ln -s $DIR/configs/vimrc ~/.vimrc
-ln -s $DIR/configs/Xresources ~/.Xresources
-xrdb ~/.Xresources
 

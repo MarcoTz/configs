@@ -1,8 +1,4 @@
-alias mess="/home/rooxo/Games/mame/mess64"
-alias reloadXresources="xrdb ~/.Xresources"
-alias init="reloadXresources && restartFRITZwifi.sh && exit"
 alias update='pacaur -Syu'
-PATH=~/Apps/configs/utils:~/Apps/stuff:$PATH
-export TERM=rxvt
+PATH=~/configs/utils:$PATH
 export EDITOR=vim
 PS1='[\u@\h] \w$ '
