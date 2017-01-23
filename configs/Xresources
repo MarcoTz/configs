@@ -1,6 +1,6 @@
 URxvt.geometry: 90x35
 URxvt.scrollstyle: plain
-URxvt.font: xft:Oxygen Mono:size=18
+URxvt.font: xft:Noto Mono:size=16
 URxvt.cursorBlink: 1
 URxvt.perl-ext-common: tabbed
 

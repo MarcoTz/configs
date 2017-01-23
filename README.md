@@ -24,6 +24,7 @@ The configs and scripts running on my laptop running arch
 * bashrc
 * vimrc
 * Xresources
+* i3
 
 all of those are linked to the right places with installConfs.sh
 
@@ -36,8 +37,9 @@ also installed with installConfs.sh
 
 which are: base16 ,nerdtree and pathogen
 
-##other repos I used:
+##other stuff I used:
 
 * https://github.com/tpope/vim-pathogen
 * https://github.com/scrooloose/nerdtree
 * https://github.com/chriskempson/base16 (Xresources and vim version)
+* http://dotshare.it/dots/1380/

@@ -7,6 +7,7 @@ then
 	rm ~/.bashrc
 	rm ~/.vimrc
 	rm ~/.Xresources
+	rm ~/.i3/config
 fi
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]
@@ -20,5 +21,6 @@ fi
 ln -s $DIR/configs/bashrc ~/.bashrc
 ln -s $DIR/configs/vimrc ~/.vimrc
 ln -s $DIR/configs/Xresources ~/.Xresources
+ln -s $DIR/configs/i3 ~/.i3/config
 xrdb ~/.Xresources
 
