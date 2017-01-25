@@ -42,4 +42,4 @@ which are: base16 ,nerdtree and pathogen
 * https://github.com/tpope/vim-pathogen
 * https://github.com/scrooloose/nerdtree
 * https://github.com/chriskempson/base16 (Xresources and vim version)
-* http://dotshare.it/dots/1380/
+* http://dotshare.it/dots/1398/
