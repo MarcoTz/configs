@@ -66,4 +66,4 @@ endfunction
 execute pathogen#infect()
 call pathogen#helptags()
 
-colorscheme base16-default "use base16 color scheme
+colorscheme base16-default-dark "use base16 color scheme

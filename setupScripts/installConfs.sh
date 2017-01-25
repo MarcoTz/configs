@@ -21,6 +21,8 @@ fi
 ln -s $DIR/configs/bashrc ~/.bashrc
 ln -s $DIR/configs/vimrc ~/.vimrc
 ln -s $DIR/configs/Xresources ~/.Xresources
+mkdir ~/.i3
 ln -s $DIR/configs/i3 ~/.i3/config
+ln -s $DIR/configs/i3bar.py ~/.i3/i3bar
 xrdb ~/.Xresources
 
