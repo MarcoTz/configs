@@ -13,6 +13,9 @@ rm "vim-pathogen" -rf
 cd bundle
 git clone https://github.com/scrooloose/nerdtree.git
 
+#install rust.vim
+git clone --depth=1 https://github.com/rust-lang/rust.vim.git
+
 #install base16 colorscheme
 cd ../
 mkdir colors

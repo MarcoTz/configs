@@ -8,6 +8,7 @@ then
 	rm ~/.vimrc
 	rm ~/.Xresources
 	rm ~/.i3/config
+	rm ~/.unison/default.prf
 fi
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]
@@ -21,6 +22,8 @@ fi
 ln -s $DIR/configs/bashrc ~/.bashrc
 ln -s $DIR/configs/vimrc ~/.vimrc
 ln -s $DIR/configs/Xresources ~/.Xresources
+mkdir .unison
+ln -s $DIR/configs/unison.prf ~/.unison/default.prf
 mkdir ~/.i3
 ln -s $DIR/configs/i3 ~/.i3/config
 ln -s $DIR/configs/i3bar.py ~/.i3/i3bar

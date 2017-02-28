@@ -1,6 +1,6 @@
-# Font for window titles. Will also be used by the bar unless a different font
+
 # is used in the bar {} block below.
-font pango:Noto Sans 14
+font pango:Noto Sans 12
 
 #sets mod key
 set $mod Mod4
@@ -14,6 +14,9 @@ set $right semicolon
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+#change keyboard layouts
+bindsym $mod+z exec switchkeyboard.sh
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -135,34 +138,37 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-
+set $bg #3C414E
+set $fg #746A56
+set $white #FFFFFF
+set $notify #4E1919
 
 # class                 border  backgr. text    indicator
-client.focused          #2B83A6 #2B83A6 #FFFFFF #DDDDDD
+client.focused          $fg $fg $white #DDDDDD
 client.focused_inactive #212121 #212121 #888888 #292D2E
-client.unfocused        #212121 #212121 #888888 #292D2E
-client.urgent           #2F343A #D64E4E #FFFFFF #D64E4E
-client.placeholder      #212121 #0C0C0C #FFFFFF #212121
+client.unfocused        $bg $bg #888888 #292D2E
+client.urgent           $notify $notify $white #D64E4E
+client.placeholder      #212121 #0C0C0C $white #212121
 client.background       #212121
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command ~/.i3/i3bar 
+        status_command i3status
 		font pango:Noto Sans 14
 		workspace_buttons yes
 	
 	
 	 colors {
-            background  #212121
+            background  $bg
             statusline  #DDDDDD
             separator   #666666
             # class             border  backgr. text
-            focused_workspace   #2B83A6 #2B83A6 #FFFFFF
-            active_workspace    #212121 #212121 #FFFFFF
+            focused_workspace   $fg $fg $white
+            active_workspace    $fg #fg $white
             inactive_workspace  #212121 #212121 #888888
-            urgent_workspace    #2F343A #D64E4E #FFFFFF
+            urgent_workspace    $notify $notify $white
       }
 } 
 
