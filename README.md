@@ -27,6 +27,7 @@ The configs and scripts running on my laptop running arch
 * i3
 * conky.sh conky for i3bar
 * workspace_msg.json saved workspace layout for i3
+* compton
 * unison
 
 all of those are linked to the right places with installConfs.sh

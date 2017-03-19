@@ -102,7 +102,7 @@ bindsym $mod+Shift+r restart
 # exit i3
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 #lock i3
-bindsym $mod+Escape exec i3lock
+bindsym $mod+Escape exec i3lock -i ~/Pictures/lockscreen.png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -117,13 +117,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $bg #3C414E
-set $fg #746A56
-set $white #FFFFFF
-set $notify #4E1919
-
 # class                 border  backgr. text    indicator
-client.placeholder      #212121 #0C0C0C $white #212121
+client.placeholder      #212121 #0C0C0C $FFFFFF #212121
 client.background       #212121
 
 
@@ -142,11 +137,17 @@ bar {
   }
 } 
 
+#set wallpaper
+exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
+
+#start compton
+exec_always compton
+
 #put second monitor to the right
 exec_always xrandr --output HDMI-1 --auto --left-of eDP-1
 
 #apply workspace layout for workspace msg and start used programs
-exec i3-msg "workspace msg; append_layout ~/.i3/workspace_msg.json"
+exec --no-startup-id i3-msg "workspace msg; append_layout ~/.i3/workspace_msg.json"
 exec hexchat
 exec telegram-desktop
 exec discord-canary
