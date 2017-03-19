@@ -8,6 +8,7 @@ then
 	rm ~/.vimrc
 	rm ~/.Xresources
 	rm ~/.i3/config
+	rm ~/.i3/workspace_msg.json
 	rm ~/.unison/default.prf
 fi
 
@@ -26,6 +27,6 @@ mkdir .unison
 cp $DIR/configs/unison.prf ~/.unison/default.prf
 mkdir ~/.i3
 ln -s $DIR/configs/i3 ~/.i3/config
-ln -s $DIR/configs/i3bar.py ~/.i3/i3bar
+ln -s $DIR/configs/workspace_msg.json ~/.i3/workspace_msg.json
 xrdb ~/.Xresources
 

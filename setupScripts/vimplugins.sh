@@ -9,10 +9,6 @@ git clone "https://github.com/tpope/vim-pathogen.git"
 mv "vim-pathogen/autoload/pathogen.vim" "autoload" -f 
 rm "vim-pathogen" -rf
 
-#install nerdtree
-cd bundle
-git clone https://github.com/scrooloose/nerdtree.git
-
 #install rust.vim
 git clone --depth=1 https://github.com/rust-lang/rust.vim.git
 

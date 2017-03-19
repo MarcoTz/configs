@@ -35,11 +35,10 @@ also installed with installConfs.sh
 * installConfs.sh links the configs above in the right directories
 * vimplugins.sh installs all the vimplugins I use
 
-which are: base16 ,nerdtree and pathogen
+which are: base16, pathogen and rust for vim
 
 ##other stuff I used:
 
 * https://github.com/tpope/vim-pathogen
-* https://github.com/scrooloose/nerdtree
 * https://github.com/chriskempson/base16 (Xresources and vim version)
 * http://dotshare.it/dots/1398/
