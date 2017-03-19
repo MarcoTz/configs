@@ -44,4 +44,4 @@ which are: base16, pathogen and rust for vim
 
 * https://github.com/tpope/vim-pathogen
 * https://github.com/chriskempson/base16 (Xresources and vim version)
-* http://dotshare.it/dots/1398/
+* https://npmjs.com/package/i3-style
