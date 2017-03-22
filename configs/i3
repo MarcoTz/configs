@@ -79,7 +79,8 @@ bindsym $mod+0 workspace 0
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 bindsym $mod+F1 workspace msg
-bindsym $mod+F2 workspace notes
+bindsym $mod+F2 workspace msg2
+bindsym $mod+F3 workspace notes
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -93,7 +94,8 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 0
 bindsym $mod+Shift+F1 move container to workspace msg
-bindsym $mod+Shift+F2 move container to workspace notes
+bindsym $mod+Shift+F2 move container to workspace msg2
+bindsym $mod+Shift+F3 move container to workspace notes
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -148,15 +150,19 @@ exec_always xrandr --output HDMI-1 --auto --left-of eDP-1
 
 #apply workspace layout for workspace msg and start used programs
 exec --no-startup-id i3-msg "workspace msg; append_layout ~/.i3/workspace_msg.json"
-exec hexchat
 exec telegram-desktop
 exec discord-canary
 
-#exec notes on workspace notes
-exec i3-msg 'workspace notes'
+#apply workspace layout for workspace msg2 and start used programs
+exec --no-startup-id i3-msg "workspace msg2; append_layout ~/.i3/workspace_msg2.json"
+exec hexchat
+exec riot-desktop
+
+#apply workspace layout for workspace notes and start used programs
+exec --no-startup-id i3-msg "workspace notes; append_layout ~/.i3/workspace_notes.json"
 exec nixnote.sh
-#exec firefox on workspace 1 
-exec i3-msg 'workspace 1'
+
+#exec firefox
 exec firefox
 
 client.focused #0088CC #0088CC #ffffff #dddddd
