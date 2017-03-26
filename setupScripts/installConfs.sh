@@ -27,7 +27,7 @@ fi
 ln -s $DIR/configs/bashrc ~/.bashrc
 ln -s $DIR/configs/vimrc ~/.vimrc
 ln -s $DIR/configs/Xresources ~/.Xresources
-mkdir .unison
+mkdir ~/.unison
 cp $DIR/configs/unison.prf ~/.unison/default.prf
 mkdir ~/.i3
 ln -s $DIR/configs/i3 ~/.i3/config

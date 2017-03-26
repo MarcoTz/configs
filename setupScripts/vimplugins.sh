@@ -13,7 +13,6 @@ rm "vim-pathogen" -rf
 git clone --depth=1 https://github.com/rust-lang/rust.vim.git
 
 #install base16 colorscheme
-cd ../
 mkdir colors
 cd colors
 git clone git://github.com/chriskempson/base16-vim.git base16
