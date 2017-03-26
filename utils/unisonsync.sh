@@ -1,3 +1,4 @@
+#!/bin/bash
 BACKUPDIR="/mnt/"
 
 unison ~/Apps $BACKUPDIR/Apps -auto

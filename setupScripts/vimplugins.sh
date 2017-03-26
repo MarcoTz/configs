@@ -1,3 +1,4 @@
+#!/bin/bash
 #installs vim plugins and exits
 #vim and git need to be installed
 mkdir ~/.vim
