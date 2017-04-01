@@ -78,8 +78,6 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 0
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
-bindsym $mod+F1 workspace msg
-bindsym $mod+F2 workspace notes
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -92,8 +90,6 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 0
-bindsym $mod+Shift+F1 move container to workspace msg
-bindsym $mod+Shift+F2 move container to workspace notes
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -142,21 +138,6 @@ exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 
 #start compton
 exec_always compton
-
-#put second monitor to the right
-exec_always xrandr --output HDMI-1 --auto --left-of eDP-1
-
-#apply workspace layout for workspace msg and start used programs
-exec --no-startup-id i3-msg "workspace msg; append_layout ~/.i3/workspace_msg.json"
-exec telegram-desktop
-exec discord-canary
-
-#apply workspace layout for workspace notes and start used programs
-exec --no-startup-id i3-msg "workspace notes; append_layout ~/.i3/workspace_notes.json"
-exec nixnote.sh
-
-#exec firefox
-exec firefox
 
 client.focused #0088CC #0088CC #ffffff #dddddd
 client.focused_inactive #333333 #333333 #888888 #292d2e
