@@ -13,10 +13,10 @@
     "percent": 0.5,
     "swallows": [
        {
-       // "class": "^TelegramDesktop$",
-       // "instance": "^Telegram$",
-       // "title": "^Telegram$",
-       // "transient_for": "^$"
+        "class": "^TelegramDesktop$",
+        "instance": "^Telegram$",
+        "title": "^Telegram$",
+        "transient_for": "^$"
        }
     ],
     "type": "con"
@@ -36,11 +36,11 @@
     "percent": 0.5,
     "swallows": [
        {
-       // "class": "^discord$",
-       // "instance": "^discord$",
-       // "title": "^Discord$",
-       // "transient_for": "^$",
-       // "window_role": "^browser\\-window$"
+        "class": "^discord$",
+        "instance": "^discord$",
+        "title": "^Discord$",
+        "transient_for": "^$",
+        "window_role": "^browser\\-window$"
        }
     ],
     "type": "con"
