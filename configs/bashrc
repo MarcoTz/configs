@@ -8,4 +8,3 @@ export TERM=rxvt
 export EDITOR=vim
 PS1='[\u@\h] \w$ '
 
-exec fish
