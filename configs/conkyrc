@@ -21,10 +21,17 @@ cpu_avg_samples 2
 TEXT
 
 [
-{"full_text":"IP: ${if_gw} ${addrs wlp2s0} ${else}no IP ${endif}"},
-{"full_text":"Home ${fs_free /home} Free", "color":"\#ffffff" },
-{"full_text":"Root ${fs_free /} Free", "color":"\#ffffff" },
-{"full_text":"RAM ${memperc}%", "color":"\#ffffff"},
-{"full_text":"CPU: ${cpu all}%"},
-{"full_text":"${time %H:%M:%S}", "color":"\#ffffff"}
+{"full_text":"${if_existing /proc/net/route wlp2s0}\uf1eb${addrs wlp2s0}${endif}"},
+{"full_text":"${if_existing /proc/net/route enp1s0}\uf0c1${addrs enp1s0}${endif}"},
+{"full_text":"\uf007 ${fs_free /home}"},
+{"full_text":"/ ${fs_free /}"},
+{"full_text":"\uf2db ${memperc}%"},
+{"full_text":"\uf085 ${cpu all}%"},
+{"full_text":"${time %d.%m.%g %H:%M:%S}"},
+{"full_text":"${if_match ${battery_percent BAT0} < 25} \uf244 ${else}\
+${if_match ${battery_percent BAT0} < 50}\uf243${else}\
+${if_match ${battery_percent BAT0} < 75}\uf242${else}\
+${if_match ${battery_percent BAT0} < 100}\uf241${else}\
+\uf240\
+${endif}${endif}${endif}${endif}"}
 ],
