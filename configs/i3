@@ -18,10 +18,10 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn "Noto Sans-12" 
+# start rofi (a program launcher)
+bindsym $mod+d exec rofi -show run 
 #set screenshot
-bindsym Print exec scrot 
+bindsym --release Print exec scrot -s 
 
 #bind function keys
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle
@@ -154,12 +154,12 @@ exec_always compton
 exec_always xrandr --output HDMI-1 --auto --left-of eDP-1
 
 #apply workspace layout for workspace msg and start used programs
+exec --no-startup-id i3-msg "workspace rss; append_layout ~/.i3/workspace_rss.json"
+exec liferea
+
 exec --no-startup-id i3-msg "workspace msg; append_layout ~/.i3/workspace_msg.json"
 exec QT_IM_MODULE=ibus telegram-desktop
 exec discord-canary
-
-exec --no-startup-id i3-msg "workspace rss; append_layout ~/.i3/workspace_rss.json"
-exec liferea
 
 #start firefox
 exec firefox

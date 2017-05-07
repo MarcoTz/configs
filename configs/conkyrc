@@ -28,5 +28,10 @@ TEXT
 {"full_text":"\uf2db ${memperc}%"},
 {"full_text":"\uf085 ${cpu all}%"},
 {"full_text":"${time %d.%m.%g %H:%M:%S}"},
-{"full_text":"\uf240 ${battery_percent}%"}
+{"full_text":"${if_match ${battery_percent} < 25} \uf244 ${else}\
+${if_match ${battery_percent} < 50}\uf243${else}\
+${if_match ${battery_percent} < 75}\uf242${else}\
+${if_match ${battery_percent} < 100}\uf241${else}\
+\uf240\
+${endif}${endif}${endif}${endif} ${battery_percent}%"}
 ],
