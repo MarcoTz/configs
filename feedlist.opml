@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>Liferea Feed List Export</title>
+  </head>
+  <body>
+    <outline title="Stuff" text="Stuff" description="Stuff" type="folder">
+      <outline title="comics" text="comics" description="comics" type="folder">
+        <outline title="Explosm.net" text="Explosm.net" description="Explosm.net" type="rss" xmlUrl="http://feeds.feedburner.com/Explosm" htmlUrl="http://www.explosm.net/rss.php"/>
+        <outline title="Classic Programmer Paintings" text="Classic Programmer Paintings" description="Classic Programmer Paintings" type="rss" xmlUrl="http://classicprogrammerpaintings.com/rss" htmlUrl="http://classicprogrammerpaintings.com/"/>
+        <outline title="Saturday Morning Breakfast Cereal" text="Saturday Morning Breakfast Cereal" description="Saturday Morning Breakfast Cereal" type="rss" xmlUrl="https://www.smbc-comics.com/rss.php" htmlUrl="http://www.smbc-comics.com/"/>
+        <outline title="CommitStrip" text="CommitStrip" description="CommitStrip" type="rss" xmlUrl="http://www.commitstrip.com/en/feed/" htmlUrl="http://www.commitstrip.com"/>
+        <outline title="xkcd.com" text="xkcd.com" description="xkcd.com" type="rss" xmlUrl="https://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/"/>
+      </outline>
+      <outline title="Tor.com" text="Tor.com" description="Tor.com" type="rss" xmlUrl="http://www.tor.com/feed/" htmlUrl="http://www.tor.com"/>
+      <outline title="RAND: News Releases for 2017" text="RAND: News Releases for 2017" description="RAND: News Releases for 2017" type="atom" xmlUrl="https://www.rand.org/news/press.xml" htmlUrl="https://www.rand.org/news/press.html"/>
+      <outline title="Atlas Obscura - Latest Articles and Places" text="Atlas Obscura - Latest Articles and Places" description="Atlas Obscura - Latest Articles and Places" type="rss" xmlUrl="http://www.atlasobscura.com/feeds/latest" htmlUrl="http://www.atlasobscura.com"/>
+      <outline title="Language Log" text="Language Log" description="Language Log" type="rss" xmlUrl="http://languagelog.ldc.upenn.edu/nll/?feed=rss2" htmlUrl="http://languagelog.ldc.upenn.edu/nll"/>
+      <outline title="Amusing Planet" text="Amusing Planet" description="Amusing Planet" type="atom" xmlUrl="http://feeds.feedburner.com/amusingplanet" htmlUrl="http://www.amusingplanet.com/"/>
+      <outline title="Marginal REVOLUTION" text="Marginal REVOLUTION" description="Marginal REVOLUTION" type="rss" xmlUrl="http://feeds.feedburner.com/marginalrevolution/feed" htmlUrl="http://marginalrevolution.com"/>
+      <outline title="Judo TG Biberach" text="Judo TG Biberach" description="Judo TG Biberach" type="rss" xmlUrl="http://www.judo-biberach.de/rss.xml" htmlUrl="http://www.judo-biberach.de/"/>
+      <outline title="Podcasts" text="Podcasts" description="Podcasts" type="folder">
+        <outline title="Artifexian" text="Artifexian" description="Artifexian" type="rss" xmlUrl="http://www.artifexian.com/?format=rss" htmlUrl="http://www.artifexian.com/"/>
+        <outline title="H3 Podcast" text="H3 Podcast" description="H3 Podcast" type="rss" xmlUrl="https://www.blubrry.com/feeds/h3_podcast.xml" htmlUrl="http://www.h3h3productions.com/"/>
+        <outline title="Hello Internet" text="Hello Internet" description="Hello Internet" type="rss" xmlUrl="http://www.hellointernet.fm/podcast?format=rss" htmlUrl="http://www.hellointernet.fm/"/>
+        <outline title="Reasonably Sound" text="Reasonably Sound" description="Reasonably Sound" type="rss" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:177723516/sounds.rss" htmlUrl="http://www.reasonablysound.com"/>
+      </outline>
+    </outline>
+  </body>
+</opml>
