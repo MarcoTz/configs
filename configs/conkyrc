@@ -33,5 +33,5 @@ ${if_match ${battery_percent BAT1} < 50}\uf243${else}\
 ${if_match ${battery_percent BAT1} < 75}\uf242${else}\
 ${if_match ${battery_percent BAT1} < 100}\uf241${else}\
 \uf240\
-${endif}${endif}${endif}${endif}"}
+${endif}${endif}${endif}${endif} ${battery_percent BAT1}%"}
 ],
