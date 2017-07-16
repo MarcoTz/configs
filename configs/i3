@@ -136,12 +136,6 @@ bar {
 #set wallpaper
 exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 
-#start ibus
-exec ibus-daemon
-
-#start compton
-exec_always compton
-
 client.focused #0088CC #0088CC #ffffff #dddddd
 client.focused_inactive #333333 #333333 #888888 #292d2e
 client.unfocused #333333 #333333 #888888 #292d2e

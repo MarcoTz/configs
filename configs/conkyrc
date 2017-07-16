@@ -23,7 +23,6 @@ TEXT
 [
 {"full_text":"${if_existing /proc/net/route wlp2s0}\uf1eb${addrs wlp2s0}${endif}"},
 {"full_text":"${if_existing /proc/net/route enp1s0}\uf0c1${addrs enp1s0}${endif}"},
-{"full_text":"\uf007 ${fs_free /home}"},
 {"full_text":"/ ${fs_free /}"},
 {"full_text":"\uf2db ${memperc}%"},
 {"full_text":"\uf085 ${cpu all}%"},
