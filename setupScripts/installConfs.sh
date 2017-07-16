@@ -7,6 +7,7 @@ if [ "$1" == "-f" ] || [ "$1" == "--force" ]
 then 
 	rm ~/.bashrc
 	rm ~/.vimrc
+	rm ~/.Xresources
 	rm ~/.i3/config
 	rm ~/.i3/conky.sh
 	rm ~/.config/conkyrc
