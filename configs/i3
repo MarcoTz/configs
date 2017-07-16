@@ -19,7 +19,8 @@ bindsym $mod+Return exec termite #i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn "Noto Sans-12" 
+#bindsym $mod+d exec dmenu_run -fn "Noto Sans-12" 
+bindsym $mod+d exec rofi -show run
 #set screenshot
 bindsym Print exec scrot 
 
