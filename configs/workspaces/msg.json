@@ -4,13 +4,13 @@
     "current_border_width": 2,
     "floating": "auto_off",
     "geometry": {
-       "height": 1020,
-       "width":754,
-       "x": 2,
-       "y": 26
+       "height": 1018,
+       "width": 636,
+       "x": 1282,
+       "y": 28
     },
     "name": "Telegram",
-    "percent": 0.4,
+    "percent": 0.366545827382914,
     "swallows": [
        {
         "class": "^TelegramDesktop$",
@@ -27,13 +27,13 @@
     "current_border_width": 2,
     "floating": "auto_off",
     "geometry": {
-       "height": 1020,
-       "width": 956,
-       "x": 962,
-       "y": 26
+       "height": 720,
+       "width": 1280,
+       "x": 320,
+       "y": 180
     },
     "name": "Discord",
-    "percent": 0.6,
+    "percent": 0.633454172617086,
     "swallows": [
        {
         "class": "^discord$",
