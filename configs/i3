@@ -162,9 +162,6 @@ exec --no-startup-id i3-msg "workspace msg; append_layout ~/.i3/workspace_msg.js
 exec QT_IM_MODULE=ibus telegram-desktop
 exec discord-canary
 
-#start browser 
-exec chromium
-
 client.focused #00b0ef #00b0ef #141414 #472b2a
 client.focused_inactive #141414 #141414 #00b0ef #472b2a
 client.unfocused #141414 #141414 #7d7d7d #141414
