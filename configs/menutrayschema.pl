@@ -41,6 +41,11 @@ our $SCHEMA = [
 	{item => ['rotate.sh 1', 'Rotate Left', 'terminal']},
 	{item => ['rotate.sh 2', 'Rotate Right', 'terminal']},
 	{item => ['rotate.sh 0', 'Rotate Normal', 'terminal']},
+
+	{sep => undefined},
+
+	{item => ['xinput float 13 && xinput float 14', 'Turn off Keyboard', 'terminal']},
+	{item => ['xinput --reattach 13 3 && xinput --reattach 14 2', 'Turn on Keyboard', 'terminal']},
  
     {menutray   => ['Menutray', 'preferences-desktop']},
 
