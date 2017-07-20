@@ -18,31 +18,41 @@ The configs and scripts running on my laptop running arch
 * nodepend.sh lists all the installed packages that nothing depends on or removes orphans
 * restartFRITZwifi.sh restarts my home wifi, because my router is broken
 * unisonsync.sh syncs some folders to external hard drive(mount point specified in file)
+* pacclear.sh clears pacman and pacaur cache completely
+* rotate.sh rotates the screen and the touchscreen 
 
 ###configs:
 
 * bashrc
 * vimrc
-* Xresources
+* Xresources (rofi color scheme)
 * i3
-* conky.sh conky for i3bar
-* workspaces/ saved workspaces for i3
-* compton
-* unison
+* conky.sh, conkyrc conky for i3bar
+* unison.prf
+* menutrayschema.pl (schema file for menutray)
 
-all of those are linked to the right places with installConfs.sh
-
-also installed with installConfs.sh
+all of those are linked to the right places with installConfs.sh(unison.prf is copied, otherwise it won't work)
 
 ###setupScripts
 
 * installConfs.sh links the configs above in the right directories
 * vimplugins.sh installs all the vimplugins I use
 
-which are: base16, pathogen and rust for vim
+which are: base16 and pathogen
 
 ##other stuff I used:
 
 * https://github.com/tpope/vim-pathogen
 * https://github.com/chriskempson/base16 (Xresources and vim version)
 * https://npmjs.com/package/i3-style
+
+### used programs
+
+* vim 
+* bash
+* conky 
+* i3
+* rofi
+* menutray
+* termite
+* unison

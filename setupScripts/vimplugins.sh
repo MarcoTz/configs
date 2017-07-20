@@ -10,8 +10,6 @@ git clone "https://github.com/tpope/vim-pathogen.git"
 mv "vim-pathogen/autoload/pathogen.vim" "autoload" -f 
 rm "vim-pathogen" -rf
 
-#install rust.vim
-git clone --depth=1 https://github.com/rust-lang/rust.vim.git
 
 #install base16 colorscheme
 mkdir colors

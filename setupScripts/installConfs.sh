@@ -31,7 +31,6 @@ mkdir ~/.unison
 cp $DIR/configs/unison.prf ~/.unison/default.prf
 mkdir ~/.i3
 ln -s $DIR/configs/i3 ~/.i3/config
-ln -s $DIR/configs/msg.json ~/.i3/workspace_msg.json
 ln -s $DIR/configs/conky.sh ~/.i3/conky.sh
 mkdir ~/.config
 ln -s $DIR/configs/conkyrc ~/.config/conkyrc
