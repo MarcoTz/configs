@@ -13,6 +13,7 @@ then
 	rm ~/.config/conkyrc
 	rm ~/.config/termite/config
 	rm ~/.unison/default.prf
+	rm ~/.config/menutray/schema.pl
 fi
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]
@@ -36,3 +37,5 @@ mkdir ~/.config
 ln -s $DIR/configs/conkyrc ~/.config/conkyrc
 mkdir ~/.config/termite
 ln -s $DIR/configs/termite ~/.config/termite/config
+mkdir ~/.config/menutray
+ln -s $DIR/configs/menutrayschema.pl ~/.config/menutray/schema.pl
