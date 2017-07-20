@@ -25,7 +25,6 @@ The configs and scripts running on my laptop running arch
 * i3
 * conky.sh conkyrc, conky for i3bar
 * workspaces/ saved workspaces for i3
-* compton.conf
 * unison.prf
 * termite
 
@@ -54,7 +53,6 @@ which are: base16, pathogen and rust for vim
 * vim
 * bash
 * i3 
-* compton
 * conky 
 * termite
 * rofi
