@@ -35,6 +35,7 @@ our $SCHEMA = [
 	{item => ['FBReader', 'FBReader', 'FBReader']},
 	{item => ['zathura', 'Zathura', 'zathura']},
 	{item => ['hexchat', 'Hexchat', 'hexchat']},
+	{item => ['liferea', 'Liferea', 'liferea']},
 
 	{sep => undefined},
 
