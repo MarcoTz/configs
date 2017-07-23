@@ -26,14 +26,10 @@ require "$ENV{HOME}/.config/menutray/config.pl";
 
 our $SCHEMA = [
     #          COMMAND                 LABEL                ICON
-    {item => ['xdg-open .',        'File Manager',      'file-manager']},
-    {item => ['termite',           'Terminal',          'terminal']},
-    {item => ['chromium',		   'Chromium',          'web-browser']}, 
-	{item => ['cellwriter', 'Cellwriter', 'cellwriter']},
-	{item => ['xournal', 'Xournal', 'xournal']},
-	{item => ['mcomix', 'MComix', 'mcomix']},
-	{item => ['FBReader', 'FBReader', 'FBReader']},
-	{item => ['zathura', 'Zathura', 'zathura']},
+    {item => ['xdg-open .', 'File Manager', 'file-manager']},
+    {item => ['termite', 'Terminal', 'terminal']},
+    {item => ['chromium', 'Chromium', 'web-browser']}, 
+	{item => ['atril', 'Atril', 'atril']},
 	{item => ['hexchat', 'Hexchat', 'hexchat']},
 	{item => ['liferea', 'Liferea', 'liferea']},
 
