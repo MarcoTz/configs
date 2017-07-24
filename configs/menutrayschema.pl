@@ -26,8 +26,6 @@ require "$ENV{HOME}/.config/menutray/config.pl";
 
 our $SCHEMA = [
     #          COMMAND                 LABEL                ICON
-    {item => ['xdg-open .', 'File Manager', 'file-manager']},
-    {item => ['termite', 'Terminal', 'terminal']},
     {item => ['chromium', 'Chromium', 'web-browser']}, 
 	{item => ['atril', 'Atril', 'atril']},
 	{item => ['hexchat', 'Hexchat', 'hexchat']},
@@ -35,16 +33,39 @@ our $SCHEMA = [
 
 	{sep => undefined},
 
-	{item => ['rotate.sh 1', 'Rotate Left', 'terminal']},
-	{item => ['rotate.sh 2', 'Rotate Right', 'terminal']},
-	{item => ['rotate.sh 0', 'Rotate Normal', 'terminal']},
+	{tree =>[
+		[ 
+		{ Name => "Left",
+		Exec => "rotate.sh 1",
+		Icon => "terminal"},
+	
+		{ Name => "Right",
+		Exec => "rotate.sh 2",
+		Icon => "terminal"},
 
-	{sep => undefined},
+		{ Name => "Normal",
+		Exec => "rotate.sh 0",
+		Icon => "terminal"},
+		],
+		'Rotate', 'terminal'
+	]},
 
-	{item => ['xinput float 13 && xinput float 14', 'Turn off Keyboard', 'terminal']},
-	{item => ['xinput --reattach 13 3 && xinput --reattach 14 2', 'Turn on Keyboard', 'terminal']},
- 
-    {menutray   => ['Menutray', 'preferences-desktop']},
+	{tree =>[
+		[
+		{Name => "Off",
+		Exec => "xinput float 13 && xinput float 14",
+		Icon => "terminal"},
+
+		{Name => "On",
+		Exec => "xinput --reattach 13 3 && xinput --reattach 14 2",
+		Icon => "terminal"},
+
+		],
+		'Keyboard', 'terminal'
+	]},
+
+	#{sep => undefined}, 
+    #{menutray   => ['Menutray', 'preferences-desktop']},
 
     {sep        => undef},
     {regenerate => ['Regenerate', 'gtk-refresh']},
