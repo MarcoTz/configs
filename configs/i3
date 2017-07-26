@@ -154,10 +154,6 @@ exec_always compton
 #put second monitor to the right
 exec_always xrandr --output HDMI-1 --auto --left-of eDP-1
 
-#apply workspace layout for workspace msg and start used programs
-exec --no-startup-id i3-msg "workspace rss; append_layout ~/.i3/workspace_rss.json"
-exec liferea
-
 exec --no-startup-id i3-msg "workspace msg; append_layout ~/.i3/workspace_msg.json"
 exec QT_IM_MODULE=ibus telegram-desktop
 exec discord-canary
