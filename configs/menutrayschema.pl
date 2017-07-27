@@ -64,6 +64,51 @@ our $SCHEMA = [
 		'Keyboard', 'terminal'
 	]},
 
+	{tree => [
+		[
+		{Name => "1",
+		Exec => "i3-msg workspace 1",
+		Icon => "i3"},
+		{Name => "2",
+		Exec => "i3-msg workspace 2",
+		Icon => "i3"},
+		{Name => "3",
+		Exec => "i3-msg workspace 3",
+		Icon => "i3"},
+		{Name => "4",
+		Exec => "i3-msg workspace 4",
+		Icon => "i3"},
+		{Name => "5",
+		Exec => "i3-msg workspace 5",
+		Icon => "i3"},
+		{Name => "6",
+		Exec => "i3-msg workspace 6",
+		Icon => "i3"},
+		{Name => "7",
+		Exec => "i3-msg workspace 7",
+		Icon => "i3"},
+		{Name => "8",
+		Exec => "i3-msg workspace 8",
+		Icon => "i3"},
+		{Name => "9",
+		Exec => "i3-msg workspace 9",
+		Icon => "i3"},
+		{Name => "0",
+		Exec => "i3-msg workspace 0",
+		Icon => "i3"},
+
+{Name => "1",
+		Exec => "i3-msg workspace 1",
+		Icon => "i3"},
+{Name => "1",
+		Exec => "i3-msg workspace 1",
+		Icon => "i3"},
+
+		],
+		'Workspaces', 'i3'
+
+	]},
+
 	#{sep => undefined}, 
     #{menutray   => ['Menutray', 'preferences-desktop']},
 
