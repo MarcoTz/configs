@@ -26,6 +26,8 @@ TEXT
 {"full_text":"/ ${fs_free /}"},
 {"full_text":"\uf2db ${memperc}%"},
 {"full_text":"\uf085 ${cpu all}%"},
+{"full_text":"\uf0f3 ${exec amixer get Master | grep -o -e 100% -e 0% -e [0-9][0-9]%} \
+${exec amixer get Master | grep -o off}"},
 {"full_text":"${time %d.%m.%g %H:%M:%S}"},
 {"full_text":"${if_match ${battery_percent BAT1} < 25} \uf244 ${else}\
 ${if_match ${battery_percent BAT1} < 50}\uf243${else}\
