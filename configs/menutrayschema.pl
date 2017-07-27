@@ -30,7 +30,7 @@ our $SCHEMA = [
 	{item => ['atril', 'Atril', 'atril']},
 	{item => ['hexchat', 'Hexchat', 'hexchat']},
 	{item => ['liferea', 'Liferea', 'liferea']},
-
+	{item => ['xournal', 'Xournal', 'xournal']},
 	{sep => undefined},
 
 	{tree =>[
