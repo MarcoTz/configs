@@ -140,6 +140,7 @@ bar {
 exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 
 exec menutray
+exec ibus-daemon
 
 client.focused #0088CC #0088CC #ffffff #dddddd
 client.focused_inactive #333333 #333333 #888888 #292d2e
