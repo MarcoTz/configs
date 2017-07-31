@@ -1,0 +1,48 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1018,
+       "width": 1916,
+       "x": 1922,
+       "y": 28
+    },
+    "name": "Telegram (1)",
+    "percent": 0.4328125,
+    "swallows": [
+       {
+       // "class": "^TelegramDesktop$",
+       // "instance": "^Telegram$",
+       // "title": "^Telegram\\ \\(1\\)$",
+       // "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1018,
+       "width": 1103,
+       "x": 2735,
+       "y": 28
+    },
+    "name": "Discord",
+    "percent": 0.5671875,
+    "swallows": [
+       {
+       // "class": "^discord$",
+       // "instance": "^discord$",
+       // "title": "^Discord$",
+       // "transient_for": "^$",
+       // "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
