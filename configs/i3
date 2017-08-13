@@ -148,15 +148,8 @@ exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 #start ibus
 exec ibus-daemon
 
-#start compton
-exec_always compton
-
 #put second monitor to the right
 exec_always xrandr --output HDMI-1 --auto --left-of eDP-1
-
-exec --no-startup-id i3-msg "workspace msg; append_layout ~/.i3/workspace_msg.json"
-exec QT_IM_MODULE=ibus telegram-desktop
-exec discord-canary
 
 client.focused #00b0ef #00b0ef #141414 #472b2a
 client.focused_inactive #141414 #141414 #00b0ef #472b2a
