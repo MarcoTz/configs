@@ -27,10 +27,12 @@ require "$ENV{HOME}/.config/menutray/config.pl";
 our $SCHEMA = [
     #          COMMAND                 LABEL                ICON
     {item => ['chromium', 'Chromium', 'chromium']}, 
+	{item => ['telegram-desktop', 'Telegram', 'telegram-desktop']},
 	{item => ['atril', 'Atril', 'atril']},
 	{item => ['hexchat', 'Hexchat', 'hexchat']},
 	{item => ['liferea', 'Liferea', 'liferea']},
 	{item => ['xournal', 'Xournal', 'xournal']},
+	{item => ['cellwriter', 'Cellwriter', 'cellwriter']},
 	{sep => undefined},
 
 	{tree =>[
