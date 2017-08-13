@@ -98,14 +98,6 @@ our $SCHEMA = [
 		{Name => "0",
 		Exec => "i3-msg workspace 0",
 		Icon => "i3"},
-
-{Name => "1",
-		Exec => "i3-msg workspace 1",
-		Icon => "i3"},
-{Name => "1",
-		Exec => "i3-msg workspace 1",
-		Icon => "i3"},
-
 		],
 		'Workspaces', 'i3'
 
@@ -116,5 +108,6 @@ our $SCHEMA = [
 
     {sep        => undef},
     {regenerate => ['Regenerate', 'gtk-refresh']},
+	{item=>['shutdow -t now','Shutdown','shutdown']},
     {exit       => ['Exit', 'exit']},
 ];
