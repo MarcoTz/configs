@@ -22,7 +22,8 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run -fn "Noto Sans-12" 
 bindsym $mod+d exec rofi -show run
 #set screenshot
-bindsym Print exec scrot 
+bindsym --release Print exec scrot -s 
+bindsym --release Shift+Print exec scrot
 
 #bind function keys
 bindsym XF86AudioMute exec amixer sset Master toggle
