@@ -6,9 +6,7 @@ set hlsearch	"highlight search matches
 "binds nohlsearch (removes search highlights) to backspace
 nnoremap <backspace> :nohlsearch<CR>
 
-nnoremap <RIGHT> :tabNext<CR>
 set smartcase "smart case in searches
-set mouse=a "enable mouse
 set autoindent "automatically keep indents
 set incsearch "hightlight while searching
 "filetype plugin
