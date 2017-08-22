@@ -108,6 +108,5 @@ our $SCHEMA = [
 
     {sep        => undef},
     {regenerate => ['Regenerate', 'gtk-refresh']},
-	{item=>['shutdow -t now','Shutdown','shutdown']},
-    {exit       => ['Exit', 'exit']},
+	{exit       => ['Exit', 'exit']},
 ];
