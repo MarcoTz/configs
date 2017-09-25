@@ -32,39 +32,22 @@ our $SCHEMA = [
 	{item => ['hexchat', 'Hexchat', 'hexchat']},
 	{item => ['liferea', 'Liferea', 'liferea']},
 	{item => ['xournal', 'Xournal', 'xournal']},
-	{item => ['cellwriter', 'Cellwriter', 'cellwriter']},
+	{item => ['onboard', 'Onboard', 'onboard']},
+	{item => ['discord-canary', 'Discord', 'discord-canary']},
+	{item => ['python /home/rooxo/Apps/bookDB/main.py', 'BookDB','python']},
+
 	{sep => undefined},
 
-	{tree =>[
-		[ 
-		{ Name => "Left",
-		Exec => "rotate.sh 1",
-		Icon => "terminal"},
-	
-		{ Name => "Right",
-		Exec => "rotate.sh 2",
-		Icon => "terminal"},
+	{item => ['rotate.sh 1', 'Rotate Left', 'termite']},
+	{item => ['rotate.sh 2', 'Rotate Right', 'termite']},
+	{item => ['rotate.sh 0', 'Rotate Normal', 'termite']},
 
-		{ Name => "Normal",
-		Exec => "rotate.sh 0",
-		Icon => "terminal"},
-		],
-		'Rotate', 'terminal'
-	]},
+	{sep => undefined},
 
-	{tree =>[
-		[
-		{Name => "Off",
-		Exec => "xinput float 13 && xinput float 14",
-		Icon => "terminal"},
+	{item => ['xinput float 13 && xinput float 14', 'Keyboard off', 'terminal']},
+	{item => ['xinput --reattach 13 3 && xinput --reattach 14 2', 'Keyboard on', 'terminal']},
 
-		{Name => "On",
-		Exec => "xinput --reattach 13 3 && xinput --reattach 14 2",
-		Icon => "terminal"},
-
-		],
-		'Keyboard', 'terminal'
-	]},
+	{sep => undefined},
 
 	{tree => [
 		[
@@ -100,7 +83,6 @@ our $SCHEMA = [
 		Icon => "i3"},
 		],
 		'Workspaces', 'i3'
-
 	]},
 
 	#{sep => undefined}, 
