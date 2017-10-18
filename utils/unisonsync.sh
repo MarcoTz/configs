@@ -1,5 +1,5 @@
 #!/bin/bash
-BACKUPDIR="/mnt/"
+BACKUPDIR="/run/media/rooxo/db11eff6-a95b-4f2f-b0be-004acdcda4f8"
 
 unison ~/Apps $BACKUPDIR/Apps -auto
 unison ~/Documents $BACKUPDIR/Documents -auto

@@ -145,6 +145,8 @@ exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 
 #start ibus
 exec ibus-daemon
+#start udiskie
+exec udiskie --tray
 
 #put second monitor to the right
 exec_always xrandr --output HDMI-1 --auto --left-of eDP-1
