@@ -51,6 +51,7 @@ which are: base16, pathogen and rust for vim
 * termite
 * rofi
 * unison
+* udiskie
 * telegram desktop
 * discord 
 
