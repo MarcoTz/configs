@@ -19,7 +19,7 @@ bindsym $mod+Return exec termite #i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run 
+bindsym $mod+d exec rofi -show run -no-config
 #set screenshot
 bindsym --release Print exec scrot -s 
 bindsym --release Shift+Print exec scrot
