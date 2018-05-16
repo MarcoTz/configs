@@ -26,7 +26,6 @@ bindsym --release Print exec scrot -s
 bindsym --release Shift+Print exec scrot
 
 #bind function keys
-bindsym XF86AudioMute exec amixer sset Master toggle
 bindsym XF86AudioLowerVolume exec amixer sset Master 10%-
 bindsym XF86AudioRaiseVolume exec amixer sset Master 10%+
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
@@ -145,6 +144,7 @@ exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 exec menutray
 exec ibus-daemon
 exec onboard 
+exec udiskie --tray
 
 client.focused #0088CC #0088CC #ffffff #dddddd
 client.focused_inactive #333333 #333333 #888888 #292d2e

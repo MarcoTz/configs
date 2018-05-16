@@ -14,19 +14,19 @@ then
 	echo "-lot --listallorphans lists all orphans including packages that are optional dependencies"
 elif [ "$1" == "-o" ] || [ "$1" == "--orphans" ]
 then
-	pacaur -Rns $(pacaur -Qtdq)
+	aurman -Rns $(aurman -Qtdq)
 elif [ "$1" == "-t" ] || [ "$1" == "--optional" ]
 then
-	comm -23 <(pacaur -Qqtt | sort) <(echo $ignorepkg | tr ' ' '\n' | cat <(pacaur -Sqg $ignoregrp) - | sort -u)
+	comm -23 <(aurman -Qqtt | sort) <(echo $ignorepkg | tr ' ' '\n' | cat <(aurman -Sqg $ignoregrp) - | sort -u)
 elif [ "$1" == "-ot" ] || [ "$1" == "--allorphans" ]
 then
-	pacaur -Rns $(pacaur -Qttdq)
+	aurman -Rns $(aurman -Qttdq)
 elif [ "$1" == "-lo" ] || [ "$1" == "--listorphans" ]
 then 
-	pacaur -Qtdq
+	aurman -Qtdq
 elif [ "$1" == "-lot" ] || [ "$1" == "--listallorphans" ]
 then 
-	pacaur -Qttdq
+	aurman -Qttdq
 else
-	comm -23 <(pacaur -Qqt | sort) <(echo $ignorepkg | tr ' ' '\n' | cat <(pacaur -Sqg $ignoregrp) - | sort -u)
+	comm -23 <(aurman -Qqt | sort) <(echo $ignorepkg | tr ' ' '\n' | cat <(aurman -Sqg $ignoregrp) - | sort -u)
 fi

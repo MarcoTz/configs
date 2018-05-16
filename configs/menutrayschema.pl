@@ -26,7 +26,7 @@ require "$ENV{HOME}/.config/menutray/config.pl";
 
 our $SCHEMA = [
     #          COMMAND                 LABEL                ICON
-    {item => ['chromium', 'Chromium', 'chromium']}, 
+    {item => ['firefox.sh', 'Firefox', 'firefox']}, 
 	{item => ['telegram-desktop', 'Telegram', 'telegram-desktop']},
 	{item => ['atril', 'Atril', 'atril']},
 	{item => ['hexchat', 'Hexchat', 'hexchat']},

@@ -6,4 +6,3 @@ alias grep="grep --color=auto"
 
 export EDITOR=vim
 PS1='[\u@\h] \w$ '
-

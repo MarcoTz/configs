@@ -1,3 +1,4 @@
 #!/bin/bash
-yes | pacaur -Scc
+yes | aurman -Scc
 rm -r .cache/spotify
+rm -r .cache/liferea/WebKitCache
