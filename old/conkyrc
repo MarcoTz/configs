@@ -21,12 +21,11 @@ cpu_avg_samples 2
 TEXT
 
 [
-{"full_text":"${if_existing /proc/net/route wlp2s0}\uf1eb${addrs wlp2s0}${endif}"},
-{"full_text":"${if_existing /proc/net/route enp1s0}\uf0c1${addrs enp1s0}${endif}"},
-{"full_text":"\uf007 ${fs_free /home}"},
+{"full_text":"${if_existing /proc/net/route wlp2s0}${addrs wlp2s0}${endif}"},
+{"full_text":"${if_existing /proc/net/route enp1s0}${addrs enp1s0}${endif}"},
 {"full_text":"/ ${fs_free /}"},
-{"full_text":"\uf2db ${memperc}%"},
-{"full_text":"\uf085 ${cpu all}%"},
+{"full_text":"MEM ${memperc}%"},
+{"full_text":"CPU ${cpu all}%"},
 {"full_text":"${time %d.%m.%g %H:%M:%S}"},
 {"full_text":"${if_match ${battery_percent} < 25} \uf244 ${else}\
 ${if_match ${battery_percent} < 50}\uf243${else}\

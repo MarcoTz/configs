@@ -6,9 +6,15 @@ set hlsearch	"highlight search matches
 "binds nohlsearch (removes search highlights) to backspace
 nnoremap <backspace> :nohlsearch<CR>
 
+"binds F5 to running the current file as a binary and saving beforehand
+nnoremap <F5> :w<CR>:!./%<CR>
+
+"binds F4 to compiling the current file to a pdf(latex)
+nnoremap <F4> :w<CR>:!pdflatex %<CR>
+
 nnoremap <RIGHT> :tabNext<CR>
+
 set smartcase "smart case in searches
-set mouse=a "enable mouse
 set autoindent "automatically keep indents
 set incsearch "hightlight while searching
 "filetype plugin
@@ -66,4 +72,6 @@ endfunction
 execute pathogen#infect()
 call pathogen#helptags()
 
+
 colorscheme base16-default-dark "use base16 color scheme
+

@@ -18,16 +18,23 @@ floating_modifier $mod
 bindsym $mod+Return exec termite #i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
+<<<<<<< HEAD:old/i3
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run -no-config
+=======
+# start dmenu (a program launcher)
+#bindsym $mod+d exec dmenu_run -fn "Noto Sans-12" 
+bindsym $mod+d exec rofi -show run
+>>>>>>> origin/yoga:configs/i3
 #set screenshot
 bindsym --release Print exec scrot -s 
 bindsym --release Shift+Print exec scrot
 
 #bind function keys
-bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle
-bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 10%-
-bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 10%+
+bindsym XF86AudioLowerVolume exec amixer sset Master 10%-
+bindsym XF86AudioRaiseVolume exec amixer sset Master 10%+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown  exec xbacklight -dec 10
 
 # change focus
 bindsym $mod+$left focus left
@@ -81,9 +88,9 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 0
+bindsym $mod+F1 workspace msg
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
-bindsym $mod+F1 workspace msg
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -105,7 +112,7 @@ bindsym $mod+Shift+r restart
 # exit i3
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 #lock i3
-bindsym $mod+Escape exec i3lock -i ~/Pictures/lockscreen.png
+bindsym $mod+Escape exec i3lock -i ~/Pictures/lock.png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -143,8 +150,9 @@ bar {
 #set wallpaper
 exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 
-#start ibus
+exec menutray
 exec ibus-daemon
+<<<<<<< HEAD:old/i3
 #start udiskie
 exec udiskie --tray
 
@@ -155,4 +163,3 @@ client.focused #00b0ef #00b0ef #141414 #472b2a
 client.focused_inactive #141414 #141414 #00b0ef #472b2a
 client.unfocused #141414 #141414 #7d7d7d #141414
 client.urgent #ff7066 #ff7066 #141414 #472b2a
-

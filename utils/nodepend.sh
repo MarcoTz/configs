@@ -14,6 +14,7 @@ then
 	echo "-lot --listallorphans lists all orphans including packages that are optional dependencies"
 elif [ "$1" == "-o" ] || [ "$1" == "--orphans" ]
 then
+<<<<<<< HEAD
 	pacaur -Rns $(pacaur -Qtdq)
 elif [ "$1" == "-t" ] || [ "$1" == "--optional" ]
 then
