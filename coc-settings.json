@@ -1,0 +1,9 @@
+{
+	"languageserver": {
+		"dualsub" : {
+			"command":"dualsub",
+			"args":["lsp"],
+			"filetypes":["dualsub"]
+		}
+	}
+}
