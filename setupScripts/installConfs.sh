@@ -7,12 +7,15 @@ if [ "$1" == "-f" ] || [ "$1" == "--force" ]
 then 
 	rm ~/.bashrc
 	rm ~/.vimrc
+<<<<<<< HEAD
 	rm ~/.Xresources
 	rm ~/.i3/config
 	rm ~/.i3/conky.sh
 	rm ~/.config/conkyrc
 	rm ~/.config/termite/config
 	rm ~/.unison/default.prf
+=======
+>>>>>>> origin/ASUS
 fi
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]
@@ -25,6 +28,7 @@ fi
 
 ln -s $DIR/configs/bashrc ~/.bashrc
 ln -s $DIR/configs/vimrc ~/.vimrc
+<<<<<<< HEAD
 ln -s $DIR/configs/Xresources ~/.Xresources
 mkdir ~/.unison
 cp $DIR/configs/unison.prf ~/.unison/default.prf
@@ -35,3 +39,6 @@ mkdir ~/.config
 ln -s $DIR/configs/conkyrc ~/.config/conkyrc
 mkdir ~/.config/termite
 ln -s $DIR/configs/termite ~/.config/termite/config
+=======
+
+>>>>>>> origin/ASUS
