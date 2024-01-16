@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Buying Manga in Japan instead of Germany}
+\author{Marco Tzschtentke}
+\begin{document}
+\maketitle
+\begin{abstract}
+In the following, we will consider the question of how many manga one should buy when going to Japan in order to save money compared to staying at home and buying all of those here.
+For this we will consider the minimal prices needed for a day in Tokyo and compare it to the savings from buying the cheaper manga there.
+We will get a minimum number of $255$ manga volumes that need to be bought for the trip to be worth it.
+Note however, that we did not include taxes for importing, which would rise this number to over $300$.
+\end{abstract}
+\section{Introduction}
+It is a well-known fact, that manga are substantially cheaper when bought in Japan compared to anywhere else. 
+However, for people living in Europe, a trip to Japan is fairly expensive.
+In this article, we want to find a way to calculate how many manga one should buy when going to Japan in order to save money compared to buying them at home. 
+
+\section{Mathematical Formulation of the Problem}
+When booking a trip to Japan, there are sevaral fixed costs to be considered. 
+Firstly, we need to pay for a flight there and back.
+For this we will assume leaving from Munich or Frankfurt a.M. airport to Tokyo airport, as these are all major airports and in theory these should be the cheapest flights that are also most readily available. \\
+The next important costs are staying at a hotel or ryokan. 
+To compensate for travelling times and possible jetlag, we will at least assume staying for a single night before returning.\\
+Lastly, we need to consider cost of food and drink during the trip.
+For this, we assume a meal before leaving for the airport as well as two meals during the flight.
+We consider this a reasonable assumption, since a flight to Tokyo is over $10$ hours and in this case airlines usually provide dinner and breakfast during the flight.
+Since we want to keep costs low, we do not include any meals in accomodations as it will usually be cheaper to buy food directly in a convenience store or restaurant instead of paying extra for breakfast or dinner in a hotel.
+
+\subsection{The Flight}
+We pulled flight costs from expedia \cite{exp} for both Munich and Frankfurt am Main both towards or from Toyko, where we consider both Narita and Hakone airport, as both should be comparable.
+We also looked for flights multiple months in the future and assume economy class, as more spontaneous flights are always more expensive.
+The results are given in table \ref{tab:flight-prices}.\\
+\begin{table}[h]
+\centering
+\begin{tabular}{l c c c c c c}
+Flight              & Tokyo-Munich & Munich-Tokyo & Roundtrip \\
+Minimal Price (Eur) & $485$        & $681$        & $781$              \\
+Maximal Price (Eur) & $3815$       & $5336$       & $5220$             \\
+\end{tabular}\\
+\vspace{1em}
+\begin{tabular}{l c c c c c c}
+Flight              & Tokyo-Frankfurt & Frankfurt-Tokyo & Rountrip\\
+Minimal Price (Eur) & $582$           & $582$           & $869$ \\
+Maximal Price (Eur) & $2814$          & $2814$          & $4069$ \\
+\end{tabular}
+
+\caption{Prices for flights to and from Tokyo (from \cite{exp})}
+\label{tab:flight-prices}
+\end{table}
+
+These prices vary depending on the day of the week and also depending on the day of booking.
+But after considering possible flights, we came to the conclusion that a reasonable price for a roundtrip is around $1000$ euros, if we do not pick the cheapest budget airlines.
+The reason we exclude the very cheapest airlines is the fact that they often have very little space and uncomfortable seats, which might lead to back pain or similar problems which could interfere with the plan.
+Furthermore, taking a budget airline might also lead to little to no food during the flight, which would increase the price for meals while in Tokyo.
+
+\subsection{Food prices}
+For the prices of food, we consider the menu of popular curry chain cocoichibanya, taken from \cite{coco}.
+These are generally more expensive than the cheapest options from convenience stores, but they also have more quality food and bigger quantities, avoiding extra time to buy additional food.
+Another advantage of the cocoichibanya is the free water given with meals. 
+If we assume about $1$ liter of water for a meal there, we do not need additional drinks during our trip, saving additional money.\\
+One curry menu in a cocoichibanya store is between $700$ and $1200$ yen, so we will assume an average of $2000$ yen for two meals.
+Using the currency converter from forbes \cite{yen}, this means we will pay $12.50$ euros for these meals. 
+
+\subsection{Hotel costs}
+For hotels, we again used expedia \cite{exp} to compare prices for a single night without any additional accomodations such as extra meals.
+Depending on the area of tokyo we picked, prices range from $45$ euros to $400$.
+We will assume a cheapest price of around $50$ euros, which might be a bit higher than needed, but since prices also vary between seasons and other variables, we assume this is a reasonable estimate.
+Note that another way to save extra money would be to buy a love hotel, which usually allow shorter ``rest periods'' which have lower prices than a single night, so we might be able to slash this price to be as low as $30$ euros.
+However, usually love hotels do not have prices available online, and without visiting Tokyo first it is difficult to get good information on average prices, so we will ignore this possibility.\\
+Also note that usually hotels give out free water as well, so in addition to drinks from cocoichibanya, this should cover drinks for a single day wihtout problem.
+
+\subsection{Additional Costs}
+So far, we have an average of $1000+12.5+50=1062.5$ euros for a single day trip to Tokyo. 
+But we still need to consider possible extra costs incurred. \\
+The first ones are travel costs, as we at least need to get to the hotel from the airport and back.
+Depending on where the hotel is located we will also need to get an allowance to get to the nearest bookstore, which might take at least one stop with the subway. 
+Prices for the subway are taken from the tokyo metro website \cite{sub} which gives a maximum of $330$ yen for up to $40$km.
+Both Narita and Hakone airport are relatively far from the center of Tokyo, and might have additinoal fees for taking a subway or train outside the metro area.
+Thus we will assume getting to and from the airport will be around $1500$ yen for one way (which also corresponds with the results from google maps), so this is $3000$ extra yen, which is about $19$ euros (\cite{yen}).
+Except for those trips, we will assume no additional transport is needed, since we can for example take a hotel in Akihabara or Shibuya, which are not much more expensive than most other areas and contain enough stores where we can go to buy manga.\\
+
+There is now only one extra fee we need to consider: money exchange.
+For this we assume the money has already been exchanged before the trip, which should minimize charges.
+Since we only need money for food and transport if we book the flight and hotel beforehand, this means we should only need $5000$ yen.
+Using the exchange rate from the reisebank \cite{change} gives a price of $33$ euros for $5000$ yen. 
+So in total we require the expenses given in table \ref{tab:expenses}, where we summarize food, transport and exchange fees under money exchange.
+
+\begin{table}[h]
+        \centering
+        \begin{tabular}{l c c c c}
+                Expense & Flight & Hotel & Money Exchange & Total \\
+                Amount (eur) & $1000$ & $50$  & $33$ & $1083$
+        \end{tabular}
+        \caption{Total expenses needed for the trip}
+        \label{tab:expenses}
+\end{table}
+
+\subsection{Manga Prices}
+Comparing the prices from three different manga \cite{onepiece},\cite{kaguya} and \cite{chainsaw} all bought in Japan, we found that a regular manga volume published by Shuesha is $440$ yen in Japan.
+There are some more expensive ones, but these can also bought second hand in places like the book-off chain, so we will use this as an average price.
+This gives $2.75$ euros for a single volume.\\
+Comparing this to prices in Germany, where a single volume, usually published by Carlsen costs $7$ euros.
+We here also have differences, where some manga are more expensive and they can be bought cheaper second-hand, but we will continue with this number.\\
+Comparing these prices, each manga bought in Japan saves $4.25$ euros for each.
+Now we are ready to calculate how much manga to buy.
+
+\section{Results}
+Using the results from above, we have a price of around $1083$ euros for a day trip to Tokyo and savings of $4.25$ euros for each manga bought there.
+This gives us the following 
+\begin{align*}
+        1083/4.25 = 254.82
+\end{align*}
+Thus, if we go to Tokyo for a day and buy at least $255$ volumes of manga, we saved money compared to buying all of them in Germany. 
+
+\section{Related Work}
+Considering the frivolity of this calculation, we assume no one has calculated this number before, nor could we find any evidence anyone did.
+
+\section{Future Work}
+There are a few additional considerations that could be made to our results.\\
+Firstly, manga sold in Japan are usually in Japanese and not in German or English.
+Thus we assumed anyone considering this would have to be able to read Japanese well enough to actually understand these.
+While there are at least English manga available in Japan, these are usually import copies which cost more than buying the manga in Germany in the first place.
+If we want to compensate for this, we could include costs for studying Japanese until we are able to actually understand these in the model.
+Since there are many possible ways to learn Japanese, all with wildly varying costs, this was beyond the scope of this work.\\
+
+Another problem with this approach is the German Zoll.
+According to their website \cite{zoll}, if the price of items brought to Germany from outside the EU is over $700$ euros, we will have to additionally pay $17.5$ or $15$ percent in tax in order to be allowed to take these, which is about $1$ euro per manga volume. 
+This means the profit margin would shrink to $3.25$ and we would actually need to buy over $333$ volumes before we get any profit. 
+It might be interesting to consider ways to avoid having to pay the extra tax, but most known methods for avoiding zoll constitute crimes, so we will not consider them here.\\
+
+Lastly, other than manga, light novels are also very popular items from Japan.
+These usually cost around $500$ yen, so it might make sense to generalize our model to include these as possible items to consider as well.
+
+\begin{thebibliography}{9}
+\bibitem{exp} Expedia.de, 16.01.2023
+\bibitem{coco} ichibanya.co.jp, 16.01.2023
+\bibitem{yen} https://www.forbes.com/advisor/money-transfer/currency-converter/jpy-eur/?amount=2000, 16.01.2023
+\bibitem{sub} tokyometro.jp, 16.01.2023
+\bibitem{gmap} maps.google.com, 16.01.2023
+\bibitem{change} reisebank.de, 16.01.2023
+\bibitem{onepiece} Echiiro Oda, One Piece Volume 1 (Japanese)
+\bibitem{kaguya} Aka Akasaka, Kaguya-sama wa Kokurasetai - Tensai-tachi no Renai Zounosen Volume 1 (Japanese)
+\bibitem{chainsaw} Tatsuki Fujimoto, Chainsaw Man Volume 1 (Japanese)
+\bibitem{kakegurui} Homura Kawamoto, Toru Naomura, Kakegurui Volumes 1-12 (Japanese)
+\bibitem{zoll} zoll.de, 16.01.2023
+\end{thebibliography}
+
+
+\end{document}
