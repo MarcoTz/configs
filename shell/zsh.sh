@@ -1,8 +1,8 @@
-source "./path_config.sh"
-source "./alias.sh"
+source ~/.path_config.sh
+source ~/.alias.sh
 
 export MOZ_USE_XINPUT2=1
-export EDITOR=vim
+export EDITOR=nvim
 
 
 ## manjaro config
