@@ -22,7 +22,7 @@ map <F5> :w<CR>:!./%<CR>
 map <F4> :w<CR>:!pdflatex %<CR>
 
 " Coc Bindings
-map <F2> :call CocCaction('jumpDefinition')<CR>
-map <F3> :call CocCaction('codeAction')<CR>
+map <F2>  :call CocAction('jumpDefinition')<CR>
+map <F3>  :call CocAction('codeAction')<CR>
 map <C-m> :call CocAction('diagnosticNext')<CR>
 map <C-n> :call CocAction('diagnosticPrevious')<CR>
