@@ -7,3 +7,4 @@ alias ll="ls -l"
 alias grep="grep --color=auto"
 
 alias gitc="git add -A && git commit -m"
+alias goconf="cd ~/Documents/configs/"
