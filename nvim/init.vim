@@ -18,8 +18,6 @@ let g:netrw_banner = 0
 
 map <BS> :nohlsearch<CR>
 map <Tab> :Explore<CR>
-map <F5> :w<CR>:!./%<CR>
-map <F4> :w<CR>:!pdflatex %<CR>
 
 " Coc Bindings
 map <F2>  :call CocAction('jumpDefinition')<CR>
