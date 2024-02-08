@@ -1,0 +1,45 @@
+
+# Unison preferences file
+ignore = Path */.git/*
+#!/bin/bash
+BACKUPDIR="/run/media/rooxo/db11eff6-a95b-4f2f-b0be-004acdcda4f8"
+
+echo Studium
+unison ~/Documents/Studium $BACKUPDIR/Documents/Studium -auto
+echo Konto
+unison ~/Documents/Konto $BAKCKUPDIR/Documents/Konto -auto
+echo ebooks
+unison ~/Documents/ebooks $BACKUPDIR/Documents/ebooks -auto
+echo Pictures
+unison ~/Pictures $BACKUPDIR/Pictures -auto
+echo rssfeeds
+unison ~/Documents/feedlist.opml $BACKUPDIR/Documents/feedlist.opml -auto
+echo bookdb
+mysqldump -u root BOOKS > $BACKUPDIR/bookdb.sql
+
+# Unison preferences file
+ignore = Path */.git/*
+BACKUPDIR="/run/media/rooxo/a03d2c3e-258b-462f-a360-1b397db1f607/"
+
+unison ~/Apps $BACKUPDIR/Apps -auto
+unison ~/Documents $BACKUPDIR/Documents -auto
+unison ~/Games $BACKUPDIR/Games -auto
+unison ~/Desktop $BACKUPDIR/Desktop -auto
+unison ~/Music $BACKUPDIR/Music -auto
+unison ~/Pictures $BACKUPDIR/Pictures -auto
+unison ~/Videos $BACKUPDIR/Videos -auto
+#!/bin/bash
+BACKUPDIR="/run/media/rooxo/db11eff6-a95b-4f2f-b0be-004acdcda4f8"
+
+echo Studium
+unison ~/Documents/Studium $BACKUPDIR/Documents/Studium -auto
+echo Konto
+unison ~/Documents/Konto $BAKCKUPDIR/Documents/Konto -auto
+echo ebooks
+unison ~/Documents/ebooks $BACKUPDIR/Documents/ebooks -auto
+echo Pictures
+unison ~/Pictures $BACKUPDIR/Pictures -auto
+echo rssfeeds
+unison ~/Documents/feedlist.opml $BACKUPDIR/Documents/feedlist.opml -auto
+echo bookdb
+mysqldump -u root BOOKS > $BACKUPDIR/bookdb.sql
